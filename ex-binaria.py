@@ -5,4 +5,14 @@ def buscaBinária(lista, alvo):
         meio = (esquerda + direita) // 2
         valorMeio = lista[meio]
 
+        if valorMeio == alvo:
+            return meio
+        elif valorMeio < alvo:
+            esquerda = meio +1
+        else:
+            direita = meio -1
+    return -1
+
+         
+
 
